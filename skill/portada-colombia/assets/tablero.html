@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mi portada · Colombia</title>
 <style>
-/* Estado X · carril editorial (marfil) con la banda de color del banner. */
+/* Estado X · carril editorial (marfil) con la banda de color de la marca. */
 :root {
   --oliva: #73704f; --oliva-700: #565442; --oliva-100: #d9d6c4;
   --marfil: #f2ebdc; --marfil-050: #faf6ec; --marfil-200: #e7decb;
@@ -20,7 +20,7 @@
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--marfil); color: var(--tinta); font: 16px/1.5 var(--sans); }
 a { color: inherit; text-underline-offset: 3px; }
-a:focus-visible { outline: 3px solid #b2b0bc; outline-offset: 2px; border-radius: 4px; }
+a:focus-visible { outline: 3px solid var(--vino); outline-offset: 2px; border-radius: 4px; }
 .contenedor { max-width: 1240px; margin: 0 auto; padding-inline: 16px; }
 .banda { background: linear-gradient(115deg, var(--negro-calido) 0%, #4a1b1f 34%, #5d2523 52%, var(--cobre) 80%, var(--arena) 100%); color: var(--marfil); }
 .banda .contenedor { padding-block: 32px 28px; display: grid; gap: 12px; }
@@ -28,7 +28,7 @@ a:focus-visible { outline: 3px solid #b2b0bc; outline-offset: 2px; border-radius
 h1 { margin: 0; font: 700 clamp(32px, 5.5vw, 56px)/1.02 var(--display); letter-spacing: -.02em; }
 h1 em { font-family: var(--acento); font-style: italic; font-weight: 400; color: var(--cadmio); }
 .perfil { margin: 0; color: rgba(242,235,220,.82); font-size: 15px; }
-.resumen { margin: 6px 0 0; padding: 16px 20px; list-style: none; display: grid; gap: 8px; background: rgba(13,9,10,.42); border: 1px solid rgba(242,235,220,.18); border-radius: 16px; }
+.resumen { margin: 6px 0 0; padding: 16px 20px; list-style: none; display: grid; gap: 8px; background: rgba(13,9,10,.62); border: 1px solid rgba(242,235,220,.18); border-radius: 16px; }
 .resumen li { padding-left: 18px; position: relative; font-size: 16px; }
 .resumen li::before { content: ""; position: absolute; left: 0; top: .6em; width: 7px; height: 7px; border-radius: 50%; background: var(--cadmio); }
 .columnas { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 18px; padding-block: 28px 12px; align-items: start; }
@@ -62,7 +62,7 @@ footer em { font-family: var(--acento); }
   <div class="columnas" id="columnas"></div>
 </main>
 <footer class="contenedor">
-  Titulares y enlaces de cada medio; el texto de «por qué importa» es un resumen propio. No reemplaza leer la noticia completa.<br>
+  Titulares y enlaces de cada medio (se abren en otra pestaña); el texto de «por qué importa» es un resumen propio. No reemplaza leer la noticia completa.<br>
   Hecho con la skill <b>portada-colombia</b> de <em>Estado X</em> · estadox.com
 </footer>
 
@@ -83,7 +83,8 @@ footer em { font-family: var(--acento); }
   var datos = {};
   try { datos = JSON.parse(document.getElementById("datos").textContent); } catch (e) { datos = {}; }
   function el(tag, cls, texto) { var n = document.createElement(tag); if (cls) n.className = cls; if (texto != null) n.textContent = texto; return n; }
-  function urlSegura(u) { return /^https?:\/\//i.test(u || "") ? u : null; }
+  function txt(v) { return v == null ? "" : String(v); }
+  function urlSegura(u) { u = txt(u).trim(); return /^https?:\/\//i.test(u) ? u : null; }
 
   document.getElementById("fecha").textContent = "Mi portada · " + (datos.fecha || "") + (datos.hora ? ", " + datos.hora : "");
   document.getElementById("perfil").textContent = datos.perfil || "";
@@ -97,18 +98,21 @@ footer em { font-family: var(--acento); }
     sec.appendChild(el("h2", null, c.titulo || ""));
     if (c.nota) sec.appendChild(el("p", "nota", c.nota));
     var lista = el("ul", "noticias");
-    (c.noticias || []).forEach(function (n) {
+    (Array.isArray(c.noticias) ? c.noticias : []).forEach(function (n) {
+      try {
+      n = n || {};
       var u = urlSegura(n.url);
       var li = el("li", "noticia");
-      var a = el(u ? "a" : "span", "tit", n.titular || "");
-      if (u) { a.href = u; a.target = "_blank"; a.rel = "noopener noreferrer"; }
+      var a = el(u ? "a" : "span", "tit", txt(n.titular));
+      if (u) { a.href = u; a.target = "_blank"; a.rel = "noopener noreferrer"; a.title = "Abre el medio en otra pestaña"; }
       li.appendChild(a);
       var meta = el("p", "meta");
-      meta.appendChild(el("b", null, n.medio || ""));
-      if (n.fecha) meta.appendChild(document.createTextNode(" · " + n.fecha));
+      meta.appendChild(el("b", null, txt(n.medio)));
+      if (n.fecha) meta.appendChild(document.createTextNode(" · " + txt(n.fecha)));
       li.appendChild(meta);
-      if (n.porque) li.appendChild(el("p", "porque", n.porque));
+      if (n.porque) li.appendChild(el("p", "porque", txt(n.porque)));
       lista.appendChild(li);
+      } catch (e) { /* una noticia mal formada no tumba el tablero */ }
     });
     if (lista.children.length) sec.appendChild(lista);
     else sec.appendChild(el("p", "vacio", "Sin noticias nuevas sobre este tema hoy."));

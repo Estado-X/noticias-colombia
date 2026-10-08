@@ -28,6 +28,16 @@ Medios que la skill prefiere. Cada dominio se verificó en línea el 08/10/2026.
 | Colombiacheck | colombiacheck.com |
 | Mongabay Latam | es.mongabay.com |
 
+## Especializados
+
+| Medio | Dominio | Tema |
+|---|---|---|
+| Consultorsalud | consultorsalud.com | Salud |
+| Impacto TIC | impactotic.co | Tecnología |
+| Enter.co | enter.co | Tecnología |
+
+Infobae publica tecnología en `infobae.com/tecno/`, además de `infobae.com/colombia/`.
+
 ## Por departamento
 
 Si un departamento no tiene medio verificado, se busca «noticias <departamento> hoy» y se usan las secciones regionales de los medios nacionales.

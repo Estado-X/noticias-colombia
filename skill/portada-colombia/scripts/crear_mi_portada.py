@@ -53,19 +53,26 @@ def leer_tabla(archivo: Path, seccion: str = "") -> list:
 
 
 def limpiar(texto: str) -> str:
-    """Quita saltos de línea y caracteres que podrían romper el Markdown o el YAML."""
-    texto = re.sub(r"[\r\n\t]+", " ", str(texto))
+    """Quita caracteres de control y los que podrían romper el Markdown o el YAML."""
+    texto = re.sub(r"[\x00-\x1f\x7f\u2028\u2029]+", " ", str(texto))
     texto = re.sub(r"[<>`|#*\[\]{}\"\\]", "", texto)
     return texto.strip()
 
 
-def validar(perfil: dict, temas_validos: list, deptos_validos: list) -> dict:
+def validar(perfil, temas_validos: list, deptos_validos: list) -> dict:
+    if not isinstance(perfil, dict):
+        raise ValueError("El perfil debe ser un objeto JSON con temas, palabras y departamento.")
     errores = []
-    temas = perfil.get("temas") or []
+    temas = perfil.get("temas")
+    if isinstance(temas, str):
+        temas = [temas]
     if not isinstance(temas, list) or not temas:
-        errores.append("Falta escoger al menos un tema.")
+        errores.append("Falta escoger al menos un tema (una lista con nombres de references/temas.md).")
         temas = []
-    temas = [t for t in temas if isinstance(t, str)]
+    raros = [t for t in temas if not isinstance(t, str)]
+    if raros:
+        errores.append("Cada tema debe ser un texto.")
+    temas = list(dict.fromkeys(t.strip() for t in temas if isinstance(t, str)))  # sin repetidos
     desconocidos = [t for t in temas if t not in temas_validos]
     if desconocidos:
         errores.append("Temas que no están en la lista: " + ", ".join(desconocidos))
@@ -73,14 +80,20 @@ def validar(perfil: dict, temas_validos: list, deptos_validos: list) -> dict:
         errores.append(f"Máximo {MAX_TEMAS} temas (llegaron {len(temas)}).")
 
     palabras = perfil.get("palabras") or []
+    if isinstance(palabras, str):
+        palabras = [palabras]
     if not isinstance(palabras, list):
-        errores.append("«palabras» debe ser una lista.")
+        errores.append("«palabras» debe ser una lista de textos.")
         palabras = []
-    palabras = [limpiar(p)[:MAX_LARGO_PALABRA] for p in palabras if limpiar(p)]
+    palabras = list(dict.fromkeys(limpiar(p)[:MAX_LARGO_PALABRA] for p in palabras if isinstance(p, str) and limpiar(p)))
     if len(palabras) > MAX_PALABRAS:
         errores.append(f"Máximo {MAX_PALABRAS} palabras propias (llegaron {len(palabras)}).")
 
-    depto = (perfil.get("departamento") or "").strip()
+    depto = perfil.get("departamento") or ""
+    if not isinstance(depto, str):
+        errores.append("«departamento» debe ser un texto, o vacío para solo nacional.")
+        depto = ""
+    depto = depto.strip()
     if depto and depto not in deptos_validos:
         errores.append(f"Departamento desconocido: {depto}. Usa uno de references/medios.md.")
 
@@ -105,11 +118,11 @@ def texto_perfil(p: dict) -> str:
 
 
 def descripcion(p: dict) -> str:
-    partes = ", ".join(p["temas"])
-    if p["departamento"]:
-        partes += f" y noticias de {p['departamento']}"
+    temas = p["temas"]
+    lista = temas[0] if len(temas) == 1 else ", ".join(temas[:-1]) + " y " + temas[-1]
+    region = f", más noticias de {p['departamento']}" if p["departamento"] else ""
     return (
-        f"Arma mi portada de noticias de Colombia con mis temas ({partes}). "
+        f"Arma mi portada de noticias de Colombia sobre {lista}{region}. "
         "Úsala con «mi portada», «noticias de hoy», «qué pasó hoy» o «cambia mis temas»."
     )[:1000]
 
@@ -149,7 +162,7 @@ def main() -> int:
     args = ap.parse_args()
     try:
         ruta = armar(args.perfil, args.salida)
-    except (ValueError, json.JSONDecodeError) as e:
+    except (ValueError, OSError, UnicodeDecodeError) as e:
         print(f"No se pudo armar la skill:\n{e}", file=sys.stderr)
         return 1
     print(f"Listo: {ruta}")

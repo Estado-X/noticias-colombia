@@ -21,10 +21,10 @@ Objetivo: preguntar a la persona qué le interesa y entregarle su propia skill, 
 3. **Palabras propias.** Pregunta si quiere seguir algo específico: un lugar, una persona pública, un proyecto de ley, una empresa. Ejemplos: «Catatumbo», «reforma pensional», «metro de Bogotá». Máximo 8. Puede no poner ninguna.
 4. **Región.** Pregunta si quiere solo noticias nacionales o también las de un departamento. Lista de departamentos en `references/medios.md`.
 5. Repite en un párrafo lo que escogió y pide confirmación.
-6. Arma su skill con el script, escribiendo el perfil en un archivo JSON:
+6. Arma su skill con el script de esta skill. Escribe el perfil en un archivo JSON dentro de una carpeta de trabajo donde puedas escribir (no dentro de la carpeta de la skill, que puede ser de solo lectura) y corre el script con su ruta completa:
 
    ```bash
-   python3 scripts/crear_mi_portada.py --perfil perfil.json --salida <carpeta de archivos para descargar>
+   python3 <carpeta de esta skill>/scripts/crear_mi_portada.py --perfil <carpeta de trabajo>/perfil.json --salida <carpeta de archivos para descargar>
    ```
 
    El JSON tiene esta forma:
@@ -35,7 +35,7 @@ Objetivo: preguntar a la persona qué le interesa y entregarle su propia skill, 
     "departamento": "Santander"}
    ```
 
-   `departamento` va vacío (`""`) si escogió solo nacional. Usa los nombres exactos de `temas.md` y `medios.md`. El script valida el perfil y produce `mi-portada-colombia.zip`.
+   `departamento` va vacío (`""`) si escogió solo nacional. Usa los nombres exactos de `temas.md` y `medios.md`. El script valida el perfil y produce `mi-portada-colombia.zip`. Si responde con un error, corrige el perfil con la persona y vuelve a correrlo.
 7. Entrega el `.zip` como archivo para descargar y explica cómo instalarlo:
    1. Descarga el archivo `mi-portada-colombia.zip`. No lo descomprimas.
    2. En Claude, ve a **Configuración › Capacidades › Skills** y pulsa **Subir skill**. Necesitas tener activa la ejecución de código.
@@ -49,21 +49,26 @@ Si el script no corre en tu entorno, explica que la ejecución de código debe e
 
 Objetivo: un tablero visual con lo más importante de las últimas 24 horas para los temas y la región de `perfil.md`, con un resumen de tres líneas arriba.
 
-Si la persona pide «cambia mis temas» o «cambia mi región», vuelve al modo instalación: el script arma una skill nueva con el perfil nuevo, que reemplaza la anterior.
+Si la persona pide «cambia mis temas» o «cambia mi región», vuelve al modo instalación y arma una skill nueva. Explícale que, antes de subirla, debe borrar la `mi-portada-colombia` que tiene instalada (las dos se llaman igual).
 
 ### 1. Buscar
 
 - Necesitas la **búsqueda web**. Si no la tienes, dilo en una línea y pide a la persona que la active. No armes una portada de memoria.
-- Por cada tema del perfil, busca con los términos de `references/temas.md` más «Colombia» y la fecha de hoy. Por cada palabra propia, una búsqueda aparte. Si hay departamento, busca además «noticias <departamento> hoy» y prueba con los medios de ese departamento en `references/medios.md` (por ejemplo `site:vanguardia.com`).
-- Prefiere los medios de `references/medios.md`. Puedes usar otros medios colombianos reconocidos. No uses agregadores (Google Noticias, MSN, Yahoo), sitios de contenido copiado ni redes sociales.
-- Si puedes abrir la página de la noticia, confirma la fecha y que el titular coincide.
+- Usa la hora de Colombia (UTC−5). Si no sabes la hora actual, deja `hora` vacía y toma como ventana desde las 00:00 de ayer.
+- Busca con frases en lenguaje natural y la fecha en letras, por ejemplo «noticias de salud en Colombia hoy 8 de octubre de 2026». Los resultados casi nunca traen la fecha: **abre cada candidata** y confirma fecha y hora en la página del artículo.
+- Para el departamento, busca «<nombre del medio> <departamento> últimas noticias» con los medios de `references/medios.md` y abre la sección que aparezca en los resultados. No escribas direcciones a mano: abre solo las que salgan en una búsqueda.
+- Tope de trabajo: máximo 2 búsquedas por tema, 1 por palabra propia y 2 para el departamento, y máximo 15 páginas abiertas. Si con eso no llenas una columna, déjala con lo que tengas y dilo en `nota`.
+- Prefiere los medios de `references/medios.md`. Puedes usar otros medios colombianos reconocidos, incluidos los especializados de esa lista. Descarta agregadores (Google Noticias, MSN, Yahoo), redes sociales, sitios que copian contenido, blogs en inglés sobre Colombia, calendarios, guías turísticas y páginas sin autor ni fecha.
 
 ### 2. Escoger
 
-- Solo noticias de las **últimas 24 horas**. Si un tema queda vacío, amplía a 48 horas y márcalo. Si sigue vacío, deja la columna con «Sin noticias nuevas sobre este tema hoy».
-- Entre 3 y 6 noticias por columna. Sin repetir el mismo hecho en dos columnas: déjalo donde más pese.
-- Una sola noticia por hecho, aunque la cuenten varios medios. Prefiere la fuente que lo informó primero o la del departamento.
-- Cada noticia lleva: titular tal como lo publicó el medio, nombre del medio, fecha y hora (si la hay), enlace directo y **una línea propia** de por qué importa.
+- Noticias de las **últimas 24 horas**. Si una columna tiene menos de 3, complétala con noticias de hasta 48 horas y avísalo en `nota` («Incluye noticias de ayer»). Si aun así hay menos de 3, deja las que haya. Si no hay ninguna, deja la columna vacía: el tablero dirá «Sin noticias nuevas sobre este tema hoy».
+- No te fíes de «hace X horas» ni de la hora de los metadatos sin revisar la zona: si la página da la hora en UTC, réstale 5. Si no estás seguro de la hora, pon solo la fecha.
+- Entre 3 y 6 noticias por columna. Un mismo hecho va una sola vez, en la columna donde más pese, con la versión de un medio de la lista que caiga dentro de la ventana (si hay varias, la del departamento o la más completa).
+- **Orden de las columnas:** los temas del perfil, luego «Lo que sigues» (las palabras propias) y al final el departamento.
+- En «Lo que sigues», máximo 2 noticias por palabra; empieza el campo `porque` con la palabra entre corchetes, por ejemplo «[Catatumbo] …». En `nota`, di cuáles palabras no tuvieron noticias hoy.
+- En la columna del departamento pon lo más útil para quien vive allí: servicios públicos, obras, salud, seguridad y decisiones de la alcaldía o la gobernación. Evita farándula y resultados deportivos. Una noticia del departamento va en esa columna aunque sea de un tema del perfil.
+- Cada noticia lleva: el titular tal como aparece en la página del artículo (si te llega cortado, usa el del resultado de búsqueda; nunca lo completes de memoria), el nombre del medio, la fecha y hora en formato dd/mm/aaaa h:mm a. m./p. m., el enlace directo y **una línea propia** de por qué importa.
 
 ### 3. Reglas de contenido
 
@@ -97,6 +102,7 @@ Si la persona pide «cambia mis temas» o «cambia mi región», vuelve al modo 
    - Una columna por tema, en el orden del perfil. Las palabras propias van en una columna «Lo que sigues». Si hay departamento, una columna con su nombre.
    - `nota` sirve para avisos como «Amplié a 48 horas».
    - El `resumen` son tres frases tuyas sobre lo más importante del día para esta persona.
+   - Dentro del bloque, escribe `<\/` en lugar de `</` en cualquier texto (por ejemplo en un titular que traiga `</`). Así ningún dato puede cerrar el bloque.
 3. Muestra el resultado como una página (artefacto HTML). No cambies el diseño ni agregues librerías.
 4. Debajo, en el chat, escribe solo el resumen de tres líneas y una línea con «Fuentes:» y los medios usados.
 

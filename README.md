@@ -15,7 +15,7 @@ Una **skill de Claude** que te pregunta qué temas y qué región te interesan y
 - **Te pregunta una sola vez** tus temas (entre 13: política, economía, justicia, orden público, contratación pública, ambiente, salud, educación, tecnología, movilidad, campo, cultura y deportes), las palabras que quieres seguir («Catatumbo», «reforma pensional») y si quieres un departamento.
 - **Te entrega tu propia skill**, `mi-portada-colombia`, con ese perfil guardado.
 - **Cada día**, cuando escribes «mi portada», busca en la web, escoge entre 3 y 6 noticias por tema y te muestra un tablero con un resumen de tres líneas arriba.
-- **Prefiere medios colombianos** verificados: 21 nacionales y medios regionales en 23 departamentos y Bogotá (lista en `skill/portada-colombia/references/medios.md`).
+- **Prefiere medios colombianos** verificados: 21 nacionales, 3 especializados y medios regionales en 23 departamentos y Bogotá (lista en `skill/portada-colombia/references/medios.md`).
 
 ### Cómo se instala
 
@@ -73,10 +73,10 @@ A **Claude skill** that asks which topics and which region you care about and th
 
 ### What it does
 
-- **Asks you once** for your topics (out of 13: politics, economy, justice, public order, public procurement, environment, health, education, technology, mobility, rural affairs, culture and sports), keywords you want to follow and, optionally, one department (Colombia's states).
+- **Asks you once** for your topics (out of 13: politics, economy, justice, public order, public procurement, environment, health, education, technology, mobility, rural affairs, culture and sports), keywords you want to follow («Catatumbo», «reforma pensional») and, optionally, one department (Colombia's states).
 - **Gives you your own skill**, `mi-portada-colombia`, with that profile saved inside.
 - **Every day**, when you type «mi portada», it searches the web, picks 3 to 6 stories per topic and shows a board with a three-line summary on top.
-- **Prefers verified Colombian outlets**: 21 national outlets plus regional media in 23 departments and Bogotá (list in `skill/portada-colombia/references/medios.md`).
+- **Prefers verified Colombian outlets**: 21 national, 3 specialized, and regional media in 23 departments and Bogotá (list in `skill/portada-colombia/references/medios.md`).
 
 ### How to install
 
