@@ -1,0 +1,36 @@
+{
+  "fecha": "08/10/2026",
+  "hora": "1:40 p. m.",
+  "perfil": "Ejemplo · Economía y empleo · Justicia y derecho · Ambiente y clima · Santander",
+  "resumen": [
+    "La inflación anual llegó a 6,29 % en septiembre; Medellín tiene la más alta del país, 7,04 %.",
+    "El Consejo de Estado prepara el fallo final sobre el decreto que subió 23 % el salario mínimo de 2026, y Fenalco insiste en que se anule.",
+    "La ministra de Minas lanzó una campaña ante El Niño, mientras las lluvias causan emergencias en el Valle de Aburrá."
+  ],
+  "columnas": [
+    {"titulo": "Economía y empleo", "nota": "", "noticias": [
+      {"titular": "Inflación en Colombia llegó a 6,29% en septiembre de 2026", "medio": "El Colombiano", "fecha": "07/10/2026 6:15 p. m.", "url": "https://www.elcolombiano.com/inicio/inflacion-colombia-ipc-septiembre-2026-6-29-por-ciento-BC42047600", "porque": "Es la cifra de inflación anual con corte a septiembre."},
+      {"titular": "Medellín ajusta tres meses con la inflación más alta de Colombia: 7,04%", "medio": "El Colombiano", "fecha": "08/10/2026 10:51 a. m.", "url": "https://www.elcolombiano.com/inicio/inflacion-medellin-anual-2026-alimentos-precios-OD42052158", "porque": "Medellín sigue por encima del promedio nacional."},
+      {"titular": "Dólar en Colombia abrió en $3.241,50: inflación y tasas de interés de EE. UU. ponen a prueba su estabilidad", "medio": "Semana", "fecha": "08/10/2026 8:57 a. m.", "url": "https://www.semana.com/economia/inversionistas/articulo/dolar-en-colombia-abrio-en-324150-inflacion-y-tasas-de-interes-de-ee-uu-ponen-a-prueba-su-estabilidad/202641/", "porque": "La apertura del dólar hoy y lo que la mueve desde afuera."},
+      {"titular": "Alza del petróleo sobre US$105 golpea las acciones y bonos ante la presión inflacionaria", "medio": "La República", "fecha": "08/10/2026 9:35 a. m.", "url": "https://www.larepublica.co/globoeconomia/alza-del-petroleo-sobre-us-105-golpea-a-acciones-y-bonos-ante-presion-inflacionaria-4499312", "porque": "Contexto de los mercados internacionales del día."}
+    ]},
+    {"titulo": "Justicia y derecho", "nota": "", "noticias": [
+      {"titular": "Fenalco insiste ante Consejo de Estado en anular decreto que fijó el salario mínimo en 23% en 2026", "medio": "Caracol Radio", "fecha": "08/10/2026 10:20 a. m.", "url": "https://caracol.com.co/2026/10/08/fenalco-insiste-ante-consejo-de-estado-en-anular-decreto-que-fijo-el-salario-minimo-en-23-en-2026/", "porque": "El Consejo de Estado alista el fallo final sobre el decreto del mínimo."},
+      {"titular": "Santiago Uribe pierde tutela y queda en firme condena por ‘Los 12 Apóstoles’", "medio": "El Universal", "fecha": "07/10/2026 4:58 p. m.", "url": "https://www.eluniversal.com.co/colombia/2026/10/07/santiago-uribe-pierde-tutela-y-queda-en-firme-condena-por-los-12-apostoles/", "porque": "La condena en este caso queda en firme."},
+      {"titular": "Lina Garrido se queda en la ANT: Consejo de Estado negó su suspensión", "medio": "El Nuevo Siglo", "fecha": "07/10/2026 4:14 p. m.", "url": "https://www.elnuevosiglo.com.co/politica/lina-garrido-se-queda-en-la-ant-consejo-de-estado-nego-su-suspension", "porque": "El Consejo de Estado negó suspenderla del cargo."},
+      {"titular": "Ungrd: por seguridad, Fiscalía había pedido no trasladar a Olmedo y Pinilla", "medio": "La Silla Vacía", "fecha": "08/10/2026 10:47 a. m.", "url": "https://www.lasillavacia.com/en-vivo/ungrd-por-seguridad-fiscalia-habia-pedido-no-trasladar-a-olmedo-y-pinilla/", "porque": "Novedad judicial en el caso UNGRD."}
+    ]},
+    {"titulo": "Ambiente y clima", "nota": "", "noticias": [
+      {"titular": "“Ninguna medida técnica será suficiente para El Niño”: ministra de Minas lanza campaña", "medio": "Semana", "fecha": "08/10/2026 9:35 a. m.", "url": "https://www.semana.com/economia/macroeconomia/articulo/ninguna-medida-tecnica-sera-suficiente-para-el-nino-ministra-de-minas-lanza-campana/202634/", "porque": "El Gobierno lanza una campaña ante El Niño."},
+      {"titular": "La millonaria inversión que recibirá Colombia para proteger la Amazonía y combatir la deforestación", "medio": "Semana", "fecha": "08/10/2026 11:35 a. m.", "url": "https://www.semana.com/sostenible/medio-ambiente/articulo/la-millonaria-inversion-que-recibira-colombia-para-proteger-la-amazonia-y-combatir-la-deforestacion/202647/", "porque": "Recursos para frenar la deforestación en la Amazonía."},
+      {"titular": "Nuevo aguacero en Medellín y el Valle de Aburrá: 24 rayos en media hora, árboles caídos y vías inundadas", "medio": "El Colombiano", "fecha": "07/10/2026 4:39 p. m.", "url": "https://www.elcolombiano.com/inicio/aguacero-medellin-valle-aburra-24-rayos-arboles-caidos-7-octubre-EF42034347", "porque": "Emergencias por lluvias en el Valle de Aburrá."},
+      {"titular": "Concejal Álvaro Acevedo pide prevención en Bogotá por lluvias", "medio": "El Nuevo Siglo", "fecha": "07/10/2026 8:24 p. m.", "url": "https://www.elnuevosiglo.com.co/nacion/concejal-alvaro-acevedo-pide-prevencion-en-bogota-por-lluvias", "porque": "Llamado a prevenir emergencias por lluvias en Bogotá."}
+    ]},
+    {"titulo": "Santander", "nota": "", "noticias": [
+      {"titular": "Inflación en Colombia llegó a 6,29%: así le fue a Bucaramanga", "medio": "Vanguardia", "fecha": "08/10/2026 8:43 a. m.", "url": "https://www.vanguardia.com/economia/local/2026/10/07/inflacion-llego-a-629-asi-le-fue-a-bucaramanga/", "porque": "La cifra de inflación vista desde Bucaramanga."},
+      {"titular": "¿Vandalismo o derecho a la protesta? Escultura fue pintada durante manifestación en la UIS", "medio": "Vanguardia", "fecha": "08/10/2026 12:18 p. m.", "url": "https://www.vanguardia.com/area-metropolitana/bucaramanga/2026/10/08/vandalismo-o-derecho-a-la-protesta-escultura-fue-pintada-durante-manifestacion-en-la-uis-y-se-reabre-el-debate/", "porque": "Debate en Bucaramanga tras una protesta en la UIS."},
+      {"titular": "Barrios con sentencias a favor, pero sin soluciones reales a sus problemáticas", "medio": "Vanguardia", "fecha": "08/10/2026 6:56 a. m.", "url": "https://www.vanguardia.com/area-metropolitana/bucaramanga/2026/10/07/barrios-con-sentencias-a-favor-pero-sin-soluciones-reales-a-sus-problematicas/", "porque": "Barrios del área metropolitana que ganaron fallos y siguen esperando soluciones."},
+      {"titular": "Vanguardia en los barrios: Campo Hermoso conmemora sus 80 años", "medio": "Vanguardia", "fecha": "08/10/2026 11:30 a. m.", "url": "https://www.vanguardia.com/area-metropolitana/bucaramanga/2026/10/08/vanguardia-en-los-barrios-campo-hermoso-conmemora-sus-80-anos/", "porque": "Aniversario de uno de los barrios tradicionales de Bucaramanga."}
+    ]}
+  ]
+}

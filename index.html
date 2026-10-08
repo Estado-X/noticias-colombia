@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi portada de Colombia · Estado X</title>
+<meta name="description" content="Una skill de Claude que te pregunta qué temas y qué región te interesan y te arma cada día tu portada de noticias de Colombia, con enlace a cada medio.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body>
+<header class="banda">
+  <div class="contenedor banda__in">
+    <p class="kicker">Estado X · Herramienta abierta</p>
+    <h1>Tu portada de noticias de <em>Colombia</em></h1>
+    <p class="banda__sub">Una skill de Claude que te pregunta qué temas y qué región te interesan, y cada día te arma un tablero con lo más importante, con enlace a cada medio.</p>
+    <div class="acciones">
+      <a class="boton boton--principal" href="descargas/portada-colombia.zip" download>Descargar la skill</a>
+      <a class="boton" href="#ejemplo">Ver un ejemplo</a>
+    </div>
+  </div>
+</header>
+
+<main class="contenedor">
+  <section class="bloque" aria-labelledby="como">
+    <h2 id="como">Cómo se instala</h2>
+    <ol class="pasos">
+      <li><span class="num">1</span><div><strong>Sube la skill a Claude.</strong> Descarga <code>portada-colombia.zip</code> sin descomprimirlo. En Claude ve a <b>Configuración › Capacidades › Skills</b> y pulsa <b>Subir skill</b>.</div></li>
+      <li><span class="num">2</span><div><strong>Dile qué te interesa.</strong> En un chat nuevo escribe «instala mi portada». Te pregunta tus temas, las palabras que quieres seguir y tu departamento.</div></li>
+      <li><span class="num">3</span><div><strong>Sube tu versión y pídela cada día.</strong> Te entrega <code>mi-portada-colombia.zip</code>. Súbelo igual que el primero, desactiva el original y escribe «mi portada».</div></li>
+    </ol>
+    <p class="nota">Necesitas un plan de Claude que permita skills (Pro, Max, Team o Enterprise), con la <b>ejecución de código</b> activa, y la <b>búsqueda web</b> encendida en el chat. Guía oficial: <a href="https://support.claude.com/en/articles/12512180-using-skills-in-claude">Using Skills in Claude</a>.</p>
+  </section>
+
+  <section class="bloque" aria-labelledby="que">
+    <h2 id="que">Qué hace</h2>
+    <div class="tarjetas">
+      <article class="tarjeta"><h3>13 temas</h3><p>Política, economía, justicia, orden público, contratación pública, ambiente, salud, educación, tecnología, movilidad, campo, cultura y deportes. Más tus propias palabras.</p></article>
+      <article class="tarjeta"><h3>Tu región</h3><p>Todo el país o un departamento. Prefiere medios regionales verificados en 23 departamentos y Bogotá, y 21 medios nacionales.</p></article>
+      <article class="tarjeta"><h3>Con la fuente</h3><p>Cada noticia lleva el titular del medio, la fecha y el enlace. Claude agrega una línea de por qué importa y un resumen de tres líneas.</p></article>
+    </div>
+  </section>
+
+  <section class="bloque" id="ejemplo" aria-labelledby="ej">
+    <h2 id="ej">Así se ve</h2>
+    <p class="nota">Ejemplo real armado el 08/10/2026 con titulares de ese día, para alguien que sigue economía, justicia, ambiente y Santander. <a href="ejemplo/">Abrirlo completo</a>.</p>
+    <div class="marco"><iframe src="ejemplo/" title="Ejemplo de portada del 08/10/2026" loading="lazy"></iframe></div>
+  </section>
+
+  <section class="bloque" aria-labelledby="limites">
+    <h2 id="limites">Límites</h2>
+    <ul class="lista">
+      <li>Depende de la búsqueda web de Claude: lo que encuentra puede variar de un día a otro.</li>
+      <li>Muestra titulares y enlaces; no copia el texto de las noticias. Para el detalle, abre el medio.</li>
+      <li>El resumen y las líneas de «por qué importa» las escribe Claude y pueden tener errores. Verifica en la fuente.</li>
+      <li>No tiene opinión política ni ordena los medios por preferencia.</li>
+    </ul>
+  </section>
+
+  <section class="bloque" aria-labelledby="credito">
+    <h2 id="credito">Crédito</h2>
+    <p>Inspirado en <a href="https://github.com/ourongxing/newsnow">newsnow</a> de ourongxing (licencia MIT): la idea de una portada con columnas por fuente que cada quien organiza. Esta es una versión nueva, escrita desde cero como skill de Claude y pensada para Colombia. No reutiliza código de newsnow.</p>
+    <p>Los titulares son de sus medios. Código y skill: <a href="https://github.com/Estado-X/noticias-colombia">github.com/Estado-X/noticias-colombia</a>, licencia MIT.</p>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">Hecho por <a href="https://estadox.com"><em>Estado X</em></a> · Modernización del Estado con IA</div>
+</footer>
+</body>
+</html>
