@@ -2,7 +2,7 @@
 
 **[Español](#español) · [English](#english)**
 
-![Ejemplo de portada del 08/10/2026](docs/captura.png)
+![Ejemplo de portada del 19/10/2026](docs/captura.png)
 
 ## Español
 
@@ -32,11 +32,11 @@ Necesitas un plan de Claude que permita skills (Pro, Max, Team o Enterprise), co
 |---|---|
 | `skill/portada-colombia/SKILL.md` | Las instrucciones para Claude: modo instalación (pregunta y arma tu skill) y modo portada (busca, escoge y arma el tablero) |
 | `skill/portada-colombia/references/temas.md` | Los 13 temas y sus términos de búsqueda |
-| `skill/portada-colombia/references/medios.md` | Medios nacionales y regionales, verificados el 08/10/2026 |
+| `skill/portada-colombia/references/medios.md` | Medios nacionales y regionales, verificados el 19/10/2026 |
 | `skill/portada-colombia/assets/tablero.html` | La plantilla del tablero. Claude solo llena el bloque de datos |
 | `skill/portada-colombia/scripts/crear_mi_portada.py` | Valida tus respuestas y arma `mi-portada-colombia.zip` |
 | `scripts/empacar.py` | Arma la descarga y el ejemplo de esta página |
-| `index.html`, `ejemplo/` | La página de presentación y un ejemplo real del 08/10/2026 |
+| `index.html`, `ejemplo/` | La página de presentación y un ejemplo real del 19/10/2026 |
 
 No hay servidor, base de datos ni claves. Todo lo hace Claude en tu cuenta.
 
@@ -59,7 +59,7 @@ No hay servidor, base de datos ni claves. Todo lo hace Claude en tu cuenta.
 
 Inspirado en **[newsnow](https://github.com/ourongxing/newsnow)** de ourongxing (licencia MIT): la idea de una portada de noticias con columnas por fuente que cada quien organiza. Este repositorio es una versión nueva, escrita desde cero como skill de Claude y pensada para Colombia. No reutiliza código de newsnow.
 
-Los titulares del ejemplo son de sus medios: El Colombiano, Semana, La República, Caracol Radio, El Universal, El Nuevo Siglo, La Silla Vacía y Vanguardia.
+Los titulares del ejemplo son de sus medios: La República, Semana, El Nuevo Siglo, El Heraldo, Infobae, El Colombiano, Caracol Radio, El Frente y Vanguardia.
 
 Hecho por **[Estado X](https://estadox.com)** · Código con licencia MIT.
 
@@ -93,11 +93,11 @@ You need a Claude plan that supports skills (Pro, Max, Team or Enterprise) with 
 |---|---|
 | `skill/portada-colombia/SKILL.md` | Instructions for Claude: setup mode (asks and builds your skill) and front-page mode (searches, picks and builds the board) |
 | `skill/portada-colombia/references/temas.md` | The 13 topics and their search terms |
-| `skill/portada-colombia/references/medios.md` | National and regional outlets, checked on 08/10/2026 |
+| `skill/portada-colombia/references/medios.md` | National and regional outlets, checked on 19/10/2026 |
 | `skill/portada-colombia/assets/tablero.html` | The board template. Claude only fills in the data block |
 | `skill/portada-colombia/scripts/crear_mi_portada.py` | Validates your answers and builds `mi-portada-colombia.zip` |
 | `scripts/empacar.py` | Builds the download and the example on this page |
-| `index.html`, `ejemplo/` | The landing page and a real example from 08/10/2026 |
+| `index.html`, `ejemplo/` | The landing page and a real example from 19/10/2026 |
 
 No server, database or API keys. Claude does everything in your own account.
 
@@ -120,6 +120,6 @@ No server, database or API keys. Claude does everything in your own account.
 
 Inspired by **[newsnow](https://github.com/ourongxing/newsnow)** by ourongxing (MIT license): the idea of a news front page with one column per source that each person arranges. This repository is a new version, written from scratch as a Claude skill and built for Colombia. It does not reuse newsnow code.
 
-Headlines in the example belong to their outlets: El Colombiano, Semana, La República, Caracol Radio, El Universal, El Nuevo Siglo, La Silla Vacía and Vanguardia.
+Headlines in the example belong to their outlets: La República, Semana, El Nuevo Siglo, El Heraldo, Infobae, El Colombiano, Caracol Radio, El Frente and Vanguardia.
 
 Made by **[Estado X](https://estadox.com)** · Code under the MIT license.

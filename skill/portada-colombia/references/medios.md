@@ -1,6 +1,6 @@
 # Medios colombianos
 
-Medios que la skill prefiere. Cada dominio se verificó en línea el 08/10/2026. Si un medio deja de responder, se usa otro de la lista o un medio colombiano reconocido.
+Medios que la skill prefiere. Cada dominio se verificó en línea el 19/10/2026. Algunos (Cambio, La Silla Vacía y Seguimiento) a veces bloquean las visitas automáticas: si uno no abre o deja de responder, se usa otro de la lista o un medio colombiano reconocido.
 
 ## Nacionales
 

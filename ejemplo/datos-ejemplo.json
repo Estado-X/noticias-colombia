@@ -1,11 +1,11 @@
 {
-  "fecha": "08/10/2026",
-  "hora": "1:40 p. m.",
+  "fecha": "19/10/2026",
+  "hora": "10:00 a. m.",
   "perfil": "Ejemplo · Economía y empleo · Justicia y derecho · Ambiente y clima · Santander",
   "resumen": [
-    "La inflación anual llegó a 6,29 % en septiembre; Medellín tiene la más alta del país, 7,04 %.",
-    "El Consejo de Estado prepara el fallo final sobre el decreto que subió 23 % el salario mínimo de 2026, y Fenalco insiste en que se anule.",
-    "La ministra de Minas lanzó una campaña ante El Niño, mientras las lluvias causan emergencias en el Valle de Aburrá."
+    "El Congreso tiene hasta mañana para aprobar el Presupuesto de 2027 y Ecopetrol declaró desiertas las ofertas de gas importado.",
+    "Ordenaron capturar al expresidente de la Corte Suprema Camilo Tarquino por el cartel de la toga, y alias Jorge 40 se acogió a sentencia anticipada.",
+    "La Navidad y El Niño presionan la tarifa de energía; en Bucaramanga, el SENA ofrece más de 1.500 vacantes en una feria laboral."
   ],
   "columnas": [
     {
@@ -13,32 +13,32 @@
       "nota": "",
       "noticias": [
         {
-          "titular": "Inflación en Colombia llegó a 6,29% en septiembre de 2026",
-          "medio": "El Colombiano",
-          "fecha": "07/10/2026 6:15 p. m.",
-          "url": "https://www.elcolombiano.com/inicio/inflacion-colombia-ipc-septiembre-2026-6-29-por-ciento-BC42047600",
-          "porque": "Es la cifra de inflación anual con corte a septiembre."
-        },
-        {
-          "titular": "Medellín ajusta tres meses con la inflación más alta de Colombia: 7,04%",
-          "medio": "El Colombiano",
-          "fecha": "07/10/2026 8:22 p. m.",
-          "url": "https://www.elcolombiano.com/inicio/inflacion-medellin-anual-2026-alimentos-precios-OD42052158",
-          "porque": "Medellín sigue por encima del promedio nacional."
-        },
-        {
-          "titular": "Dólar en Colombia abrió en $3.241,50: inflación y tasas de interés de EE. UU. ponen a prueba su estabilidad",
-          "medio": "Semana",
-          "fecha": "08/10/2026 9:01 a. m.",
-          "url": "https://www.semana.com/economia/inversionistas/articulo/dolar-en-colombia-abrio-en-324150-inflacion-y-tasas-de-interes-de-ee-uu-ponen-a-prueba-su-estabilidad/202641/",
-          "porque": "La apertura del dólar hoy y lo que la mueve desde afuera."
-        },
-        {
-          "titular": "Alza del petróleo sobre US$105 golpea las acciones y bonos ante la presión inflacionaria",
+          "titular": "Mañana vence el plazo para que el Congreso de la República apruebe el Presupuesto de 2027",
           "medio": "La República",
-          "fecha": "08/10/2026 9:35 a. m.",
-          "url": "https://www.larepublica.co/globoeconomia/alza-del-petroleo-sobre-us-105-golpea-a-acciones-y-bonos-ante-presion-inflacionaria-4499312",
-          "porque": "Contexto de los mercados internacionales del día."
+          "fecha": "19/10/2026 6:26 a. m.",
+          "url": "https://www.larepublica.co/economia/manana-vence-el-plazo-para-que-el-congreso-de-la-republica-apruebe-el-presupuesto-de-2027-4505803",
+          "porque": "El Congreso tiene hasta el 20 de octubre para aprobar el presupuesto del próximo año."
+        },
+        {
+          "titular": "Ecopetrol declara desiertas ofertas de gas importado por riesgos comerciales y acelera el desarrollo de Sirius",
+          "medio": "Semana",
+          "fecha": "19/10/2026 6:57 a. m.",
+          "url": "https://www.semana.com/economia/empresas/articulo/ecopetrol-declara-desiertas-ofertas-de-gas-importado-por-riesgos-comerciales-y-acelera-el-desarrollo-de-sirius/202645/",
+          "porque": "Afecta el suministro de gas mientras se impulsa la producción nacional."
+        },
+        {
+          "titular": "El dólar se cotiza a la baja en $3.158,72, $15,95 por debajo de la TRM del día, que se ubicó en $3.174,67",
+          "medio": "La República",
+          "fecha": "19/10/2026 8:10 a. m.",
+          "url": "https://www.larepublica.co/finanzas/precio-del-dolar-y-petroleo-hoy-19-de-octubre-4505897",
+          "porque": "El precio del dólar con el que arranca la semana."
+        },
+        {
+          "titular": "En agosto se vivió la destrucción mensual de empleos más alta desde pandemia.",
+          "medio": "El Nuevo Siglo",
+          "fecha": "18/10/2026 3:04 p. m.",
+          "url": "https://www.elnuevosiglo.com.co/economia/en-agosto-se-vivio-la-destruccion-mensual-de-empleos-mas-alta-desde-pandemia",
+          "porque": "Un dato del mercado laboral que pesa en el debate del salario mínimo."
         }
       ]
     },
@@ -47,32 +47,32 @@
       "nota": "",
       "noticias": [
         {
-          "titular": "Fenalco insiste ante Consejo de Estado en anular decreto que fijó el salario mínimo en 23% en 2026",
-          "medio": "Caracol Radio",
-          "fecha": "08/10/2026 10:20 a. m.",
-          "url": "https://caracol.com.co/2026/10/08/fenalco-insiste-ante-consejo-de-estado-en-anular-decreto-que-fijo-el-salario-minimo-en-23-en-2026/",
-          "porque": "El Consejo de Estado alista el fallo final sobre el decreto del mínimo."
+          "titular": "Orden de captura contra el expresidente de la Corte Suprema, Camilo Tarquino, por el cartel de la toga",
+          "medio": "Semana",
+          "fecha": "19/10/2026 9:25 a. m.",
+          "url": "https://www.semana.com/nacion/articulo/orden-de-captura-contra-el-expresidente-de-la-corte-suprema-camilo-tarquino-por-el-cartel-de-la-toga/202644/",
+          "porque": "Nuevo paso en el caso del cartel de la toga."
         },
         {
-          "titular": "Santiago Uribe pierde tutela y queda en firme condena por ‘Los 12 Apóstoles’",
-          "medio": "El Universal",
-          "fecha": "07/10/2026 4:58 p. m.",
-          "url": "https://www.eluniversal.com.co/colombia/2026/10/07/santiago-uribe-pierde-tutela-y-queda-en-firme-condena-por-los-12-apostoles/",
-          "porque": "La condena en este caso queda en firme."
+          "titular": "Alias Jorge 40 se acoge a sentencia anticipada por crímenes perpetrados a 145 víctimas en el Cesar",
+          "medio": "El Heraldo",
+          "fecha": "19/10/2026 8:32 a. m.",
+          "url": "https://www.elheraldo.co/colombia/2026/10/19/alias-jorge-40-se-acoge-a-sentencia-anticipada-por-crimenes-perpetrados-a-145-victimas-en-el-cesar/",
+          "porque": "El excomandante paramilitar reconoció su responsabilidad ante la Fiscalía."
         },
         {
-          "titular": "Lina Garrido se queda en la ANT: Consejo de Estado negó su suspensión",
-          "medio": "El Nuevo Siglo",
-          "fecha": "07/10/2026 4:14 p. m.",
-          "url": "https://www.elnuevosiglo.com.co/politica/lina-garrido-se-queda-en-la-ant-consejo-de-estado-nego-su-suspension",
-          "porque": "El Consejo de Estado negó suspenderla del cargo."
+          "titular": "Alerta fiscal por sobrecosto en la compra de los aviones Gripen: Contraloría advierte sobre pérdida de casi $2.130 millones",
+          "medio": "Infobae",
+          "fecha": "18/10/2026 5:53 p. m.",
+          "url": "https://www.infobae.com/colombia/2026/10/18/alerta-fiscal-por-sobrecosto-en-la-compra-de-los-aviones-gripen-contraloria-advierte-sobre-perdida-de-casi-2130-millones/",
+          "porque": "La Contraloría pone la lupa sobre la compra de los nuevos aviones de combate."
         },
         {
-          "titular": "Ungrd: por seguridad, Fiscalía había pedido no trasladar a Olmedo y Pinilla",
-          "medio": "La Silla Vacía",
-          "fecha": "08/10/2026 10:47 a. m.",
-          "url": "https://www.lasillavacia.com/en-vivo/ungrd-por-seguridad-fiscalia-habia-pedido-no-trasladar-a-olmedo-y-pinilla/",
-          "porque": "Novedad judicial en el caso UNGRD."
+          "titular": "Procuraduría investiga contrato de $36.300 millones para dotar de comunicaciones a 18 aeropuertos del país",
+          "medio": "El Colombiano",
+          "fecha": "18/10/2026 1:52 p. m.",
+          "url": "https://www.elcolombiano.com/inicio/procuraduria-contrato-aerocivil-18-aeropuertos-PM42391934",
+          "porque": "Investigación disciplinaria a tres exdirectivos de la Aerocivil."
         }
       ]
     },
@@ -81,32 +81,32 @@
       "nota": "",
       "noticias": [
         {
-          "titular": "“Ninguna medida técnica será suficiente para El Niño”: ministra de Minas lanza campaña",
+          "titular": "La Navidad y el fenómeno de El Niño llevarían el kilovatio a más de $800",
+          "medio": "La República",
+          "fecha": "19/10/2026 12:03 a. m.",
+          "url": "https://www.larepublica.co/economia/la-navidad-y-el-fenomeno-de-el-nino-llevarian-el-kilovatio-a-mas-de-800-4505372",
+          "porque": "El Niño y la demanda de fin de año presionan la tarifa de energía."
+        },
+        {
+          "titular": "¿Lloverá hoy en su ciudad? El Ideam anticipa lluvias en varias regiones de Colombia",
           "medio": "Semana",
-          "fecha": "08/10/2026 9:59 a. m.",
-          "url": "https://www.semana.com/economia/macroeconomia/articulo/ninguna-medida-tecnica-sera-suficiente-para-el-nino-ministra-de-minas-lanza-campana/202634/",
-          "porque": "El Gobierno lanza una campaña ante El Niño."
+          "fecha": "19/10/2026 6:40 a. m.",
+          "url": "https://www.semana.com/nacion/articulo/llovera-hoy-en-su-ciudad-el-ideam-anticipa-lluvias-en-varias-regiones-de-colombia/202651/",
+          "porque": "El pronóstico del día, con lluvias en la tarde y la noche."
         },
         {
-          "titular": "La millonaria inversión que recibirá Colombia para proteger la Amazonía y combatir la deforestación",
-          "medio": "Semana",
-          "fecha": "08/10/2026 11:35 a. m.",
-          "url": "https://www.semana.com/sostenible/medio-ambiente/articulo/la-millonaria-inversion-que-recibira-colombia-para-proteger-la-amazonia-y-combatir-la-deforestacion/202647/",
-          "porque": "Recursos para frenar la deforestación en la Amazonía."
+          "titular": "Incendio en Cúcuta completa tres días y afecta hasta 40 hectáreas consumidas",
+          "medio": "Caracol Radio",
+          "fecha": "19/10/2026 5:39 a. m.",
+          "url": "https://caracol.com.co/2026/10/19/incendio-en-cucuta-completa-tres-dias-y-afecta-hasta-40-hectareas-consumidas/",
+          "porque": "Bomberos y Defensa Civil siguen intentando controlar el fuego."
         },
         {
-          "titular": "Nuevo aguacero en Medellín y el Valle de Aburrá: 24 rayos en media hora, árboles caídos y vías inundadas",
-          "medio": "El Colombiano",
-          "fecha": "07/10/2026 4:39 p. m.",
-          "url": "https://www.elcolombiano.com/inicio/aguacero-medellin-valle-aburra-24-rayos-arboles-caidos-7-octubre-EF42034347",
-          "porque": "Emergencias por lluvias en el Valle de Aburrá."
-        },
-        {
-          "titular": "Concejal Álvaro Acevedo pide prevención en Bogotá por lluvias",
-          "medio": "El Nuevo Siglo",
-          "fecha": "07/10/2026 8:24 p. m.",
-          "url": "https://www.elnuevosiglo.com.co/nacion/concejal-alvaro-acevedo-pide-prevencion-en-bogota-por-lluvias",
-          "porque": "Llamado a prevenir emergencias por lluvias en Bogotá."
+          "titular": "Ordenan cierre parcial del relleno sanitario que recoge basuras de 15 municipios del Tolima",
+          "medio": "Caracol Radio",
+          "fecha": "19/10/2026 7:44 a. m.",
+          "url": "https://caracol.com.co/2026/10/19/ordenan-cierre-parcial-del-relleno-sanitario-que-recoge-basuras-de-15-municipios-del-tolima/",
+          "porque": "La orden de Cortolima afecta la recolección de basuras en varios municipios."
         }
       ]
     },
@@ -115,32 +115,32 @@
       "nota": "",
       "noticias": [
         {
-          "titular": "Inflación en Colombia llegó a 6,29%: así le fue a Bucaramanga",
-          "medio": "Vanguardia",
-          "fecha": "07/10/2026 6:19 p. m.",
-          "url": "https://www.vanguardia.com/economia/local/2026/10/07/inflacion-llego-a-629-asi-le-fue-a-bucaramanga/",
-          "porque": "La cifra de inflación vista desde Bucaramanga."
+          "titular": "Trabajo sí hay en Bucaramanga con el SENA que tiene disponibles 1.500 oportunidades laborales",
+          "medio": "El Frente",
+          "fecha": "19/10/2026 8:40 a. m.",
+          "url": "https://elfrente.com.co/trabajo-si-hay-en-bucaramanga-con-el-sena-que-tiene-disponibles-1-500-oportunidades-laboralews/",
+          "porque": "Feria laboral gratuita del SENA con más de 1.500 vacantes."
         },
         {
-          "titular": "¿Vandalismo o derecho a la protesta? Escultura fue pintada durante manifestación en la UIS",
-          "medio": "Vanguardia",
-          "fecha": "08/10/2026 11:44 a. m.",
-          "url": "https://www.vanguardia.com/area-metropolitana/bucaramanga/2026/10/08/vandalismo-o-derecho-a-la-protesta-escultura-fue-pintada-durante-manifestacion-en-la-uis-y-se-reabre-el-debate/",
-          "porque": "Debate en Bucaramanga tras una protesta en la UIS."
+          "titular": "Exigirán chaleco reflectivo a los motociclistas en Floridablanca",
+          "medio": "El Frente",
+          "fecha": "19/10/2026 8:44 a. m.",
+          "url": "https://elfrente.com.co/exigiran-chaleco-reflectivo-a-los-motociclistas-en-floridablanca/",
+          "porque": "Quien no use prendas reflectivas de noche se expone a multas."
         },
         {
-          "titular": "Vanguardia en los barrios: Campo Hermoso conmemora sus 80 años",
-          "medio": "Vanguardia",
-          "fecha": "08/10/2026 9:06 a. m.",
-          "url": "https://www.vanguardia.com/area-metropolitana/bucaramanga/2026/10/08/vanguardia-en-los-barrios-campo-hermoso-conmemora-sus-80-anos/",
-          "porque": "Aniversario de uno de los barrios tradicionales de Bucaramanga."
+          "titular": "Reacción inmediata de las autoridades para atacar grupos criminales en Santander con un nuevo CIMVRI",
+          "medio": "El Frente",
+          "fecha": "19/10/2026 8:24 a. m.",
+          "url": "https://elfrente.com.co/reaccion-inmediata-de-las-autoridades-para-atacar-grupos-criminales-en-santander-con-un-nuevo-cimvri/",
+          "porque": "Refuerzo de seguridad en García Rovira tras el ataque a un bus."
         },
         {
-          "titular": "Arrecia lluvia de críticas sobre el rector del colegio Salesiano, piden su renuncia",
+          "titular": "2.900 nuevos casos de cáncer en un año: estos son los más letales en Santander",
           "medio": "Vanguardia",
-          "fecha": "08/10/2026 7:08 a. m.",
-          "url": "https://www.vanguardia.com/area-metropolitana/bucaramanga/2026/10/08/arrecia-lluvia-de-criticas-sobre-el-rector-del-colegio-salesiano-piden-su-renuncia/",
-          "porque": "Crecen las críticas y piden la renuncia del rector de un colegio de Bucaramanga."
+          "fecha": "18/10/2026 3:05 p. m.",
+          "url": "https://www.vanguardia.com/area-metropolitana/bucaramanga/2026/10/18/santander-frente-al-cancer-mas-de-32-mil-personas-viven-con-la-enfermedad/",
+          "porque": "Cifras de cáncer en el departamento y el llamado a la detección temprana."
         }
       ]
     }
